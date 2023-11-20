@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2054EE0F2B0BA5F0008BE4B6 /* FetchChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE0E2B0BA5F0008BE4B6 /* FetchChallengeApp.swift */; };
-		2054EE112B0BA5F0008BE4B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE102B0BA5F0008BE4B6 /* ContentView.swift */; };
+		2054EE112B0BA5F0008BE4B6 /* DessertList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE102B0BA5F0008BE4B6 /* DessertList.swift */; };
 		2054EE132B0BA5F1008BE4B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2054EE122B0BA5F1008BE4B6 /* Assets.xcassets */; };
 		2054EE162B0BA5F1008BE4B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2054EE152B0BA5F1008BE4B6 /* Preview Assets.xcassets */; };
-		2054EE202B0BA5F1008BE4B6 /* FetchChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE1F2B0BA5F1008BE4B6 /* FetchChallengeTests.swift */; };
-		2054EE2A2B0BA5F1008BE4B6 /* FetchChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE292B0BA5F1008BE4B6 /* FetchChallengeUITests.swift */; };
-		2054EE2C2B0BA5F1008BE4B6 /* FetchChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE2B2B0BA5F1008BE4B6 /* FetchChallengeUITestsLaunchTests.swift */; };
+		2054EE392B0BA644008BE4B6 /* Dessert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE382B0BA644008BE4B6 /* Dessert.swift */; };
+		2054EE3B2B0BAAC3008BE4B6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE3A2B0BAAC3008BE4B6 /* NetworkManager.swift */; };
+		2054EE3D2B0BD2E5008BE4B6 /* DessertListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE3C2B0BD2E5008BE4B6 /* DessertListViewModel.swift */; };
+		2054EE3F2B0BD488008BE4B6 /* DessertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE3E2B0BD488008BE4B6 /* DessertListCell.swift */; };
+		2054EE412B0BD639008BE4B6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE402B0BD639008BE4B6 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +38,16 @@
 /* Begin PBXFileReference section */
 		2054EE0B2B0BA5F0008BE4B6 /* FetchChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2054EE0E2B0BA5F0008BE4B6 /* FetchChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChallengeApp.swift; sourceTree = "<group>"; };
-		2054EE102B0BA5F0008BE4B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2054EE102B0BA5F0008BE4B6 /* DessertList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertList.swift; sourceTree = "<group>"; };
 		2054EE122B0BA5F1008BE4B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2054EE152B0BA5F1008BE4B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2054EE1B2B0BA5F1008BE4B6 /* FetchChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2054EE1F2B0BA5F1008BE4B6 /* FetchChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChallengeTests.swift; sourceTree = "<group>"; };
 		2054EE252B0BA5F1008BE4B6 /* FetchChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2054EE292B0BA5F1008BE4B6 /* FetchChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChallengeUITests.swift; sourceTree = "<group>"; };
-		2054EE2B2B0BA5F1008BE4B6 /* FetchChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2054EE382B0BA644008BE4B6 /* Dessert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dessert.swift; sourceTree = "<group>"; };
+		2054EE3A2B0BAAC3008BE4B6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2054EE3C2B0BD2E5008BE4B6 /* DessertListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewModel.swift; sourceTree = "<group>"; };
+		2054EE3E2B0BD488008BE4B6 /* DessertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListCell.swift; sourceTree = "<group>"; };
+		2054EE402B0BD639008BE4B6 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				2054EE0D2B0BA5F0008BE4B6 /* FetchChallenge */,
-				2054EE1E2B0BA5F1008BE4B6 /* FetchChallengeTests */,
-				2054EE282B0BA5F1008BE4B6 /* FetchChallengeUITests */,
 				2054EE0C2B0BA5F0008BE4B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +96,11 @@
 		2054EE0D2B0BA5F0008BE4B6 /* FetchChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				2054EE422B0BF397008BE4B6 /* Model */,
+				2054EE432B0BF3B3008BE4B6 /* Utils */,
+				2054EE442B0BF3D4008BE4B6 /* Views */,
+				2054EE452B0BF3F0008BE4B6 /* Screens */,
 				2054EE0E2B0BA5F0008BE4B6 /* FetchChallengeApp.swift */,
-				2054EE102B0BA5F0008BE4B6 /* ContentView.swift */,
 				2054EE122B0BA5F1008BE4B6 /* Assets.xcassets */,
 				2054EE142B0BA5F1008BE4B6 /* Preview Content */,
 			);
@@ -110,21 +115,38 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2054EE1E2B0BA5F1008BE4B6 /* FetchChallengeTests */ = {
+		2054EE422B0BF397008BE4B6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2054EE1F2B0BA5F1008BE4B6 /* FetchChallengeTests.swift */,
+				2054EE382B0BA644008BE4B6 /* Dessert.swift */,
 			);
-			path = FetchChallengeTests;
+			name = Model;
 			sourceTree = "<group>";
 		};
-		2054EE282B0BA5F1008BE4B6 /* FetchChallengeUITests */ = {
+		2054EE432B0BF3B3008BE4B6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				2054EE292B0BA5F1008BE4B6 /* FetchChallengeUITests.swift */,
-				2054EE2B2B0BA5F1008BE4B6 /* FetchChallengeUITestsLaunchTests.swift */,
+				2054EE3A2B0BAAC3008BE4B6 /* NetworkManager.swift */,
 			);
-			path = FetchChallengeUITests;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2054EE442B0BF3D4008BE4B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2054EE402B0BD639008BE4B6 /* LoadingView.swift */,
+				2054EE3E2B0BD488008BE4B6 /* DessertListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2054EE452B0BF3F0008BE4B6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2054EE3C2B0BD2E5008BE4B6 /* DessertListViewModel.swift */,
+				2054EE102B0BA5F0008BE4B6 /* DessertList.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2054EE112B0BA5F0008BE4B6 /* ContentView.swift in Sources */,
+				2054EE3B2B0BAAC3008BE4B6 /* NetworkManager.swift in Sources */,
+				2054EE112B0BA5F0008BE4B6 /* DessertList.swift in Sources */,
+				2054EE3F2B0BD488008BE4B6 /* DessertListCell.swift in Sources */,
+				2054EE392B0BA644008BE4B6 /* Dessert.swift in Sources */,
 				2054EE0F2B0BA5F0008BE4B6 /* FetchChallengeApp.swift in Sources */,
+				2054EE412B0BD639008BE4B6 /* LoadingView.swift in Sources */,
+				2054EE3D2B0BD2E5008BE4B6 /* DessertListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +293,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2054EE202B0BA5F1008BE4B6 /* FetchChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2054EE2A2B0BA5F1008BE4B6 /* FetchChallengeUITests.swift in Sources */,
-				2054EE2C2B0BA5F1008BE4B6 /* FetchChallengeUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
