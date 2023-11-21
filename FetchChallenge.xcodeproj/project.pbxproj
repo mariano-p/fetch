@@ -16,6 +16,8 @@
 		2054EE3D2B0BD2E5008BE4B6 /* DessertListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE3C2B0BD2E5008BE4B6 /* DessertListViewModel.swift */; };
 		2054EE3F2B0BD488008BE4B6 /* DessertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE3E2B0BD488008BE4B6 /* DessertListCell.swift */; };
 		2054EE412B0BD639008BE4B6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE402B0BD639008BE4B6 /* LoadingView.swift */; };
+		2054EE472B0C2780008BE4B6 /* DessertDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE462B0C2780008BE4B6 /* DessertDetails.swift */; };
+		2054EE492B0C284C008BE4B6 /* DessertDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054EE482B0C284C008BE4B6 /* DessertDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		2054EE3C2B0BD2E5008BE4B6 /* DessertListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewModel.swift; sourceTree = "<group>"; };
 		2054EE3E2B0BD488008BE4B6 /* DessertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListCell.swift; sourceTree = "<group>"; };
 		2054EE402B0BD639008BE4B6 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		2054EE462B0C2780008BE4B6 /* DessertDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetails.swift; sourceTree = "<group>"; };
+		2054EE482B0C284C008BE4B6 /* DessertDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				2054EE3C2B0BD2E5008BE4B6 /* DessertListViewModel.swift */,
+				2054EE482B0C284C008BE4B6 /* DessertDetailsViewModel.swift */,
 				2054EE102B0BA5F0008BE4B6 /* DessertList.swift */,
+				2054EE462B0C2780008BE4B6 /* DessertDetails.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -281,11 +287,13 @@
 			files = (
 				2054EE3B2B0BAAC3008BE4B6 /* NetworkManager.swift in Sources */,
 				2054EE112B0BA5F0008BE4B6 /* DessertList.swift in Sources */,
+				2054EE492B0C284C008BE4B6 /* DessertDetailsViewModel.swift in Sources */,
 				2054EE3F2B0BD488008BE4B6 /* DessertListCell.swift in Sources */,
 				2054EE392B0BA644008BE4B6 /* Dessert.swift in Sources */,
 				2054EE0F2B0BA5F0008BE4B6 /* FetchChallengeApp.swift in Sources */,
 				2054EE412B0BD639008BE4B6 /* LoadingView.swift in Sources */,
 				2054EE3D2B0BD2E5008BE4B6 /* DessertListViewModel.swift in Sources */,
+				2054EE472B0C2780008BE4B6 /* DessertDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

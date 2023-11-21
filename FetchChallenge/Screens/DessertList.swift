@@ -13,19 +13,24 @@ struct DessertList: View {
     
     var body: some View {
         ZStack {
-            NavigationView {
+            NavigationStack {
                 List(viewModel.desserts, id: \.idMeal) { dessert in
-                    DessertListCell(dessert: dessert)
+                    NavigationLink(value: dessert) {
+                        DessertListCell(dessert: dessert)
+                    }
                 }
                 .navigationTitle("Desserts")
+                .navigationDestination(for: Dessert.self) { dessert in
+                    DessertDetails(dessertId: dessert.idMeal)
+                }
                 .background(
                     LinearGradient(gradient: Gradient(colors: [.white, .indigo]), startPoint: .top, endPoint: .bottom)
                         .edgesIgnoringSafeArea(.all)
                 )
                 .scrollContentBackground(.hidden)
             }
-            .onAppear {
-                 viewModel.getDesserts()
+            .task {
+                viewModel.getDesserts()
             }
             if viewModel.isLoading {
                 LoadingView()

@@ -7,26 +7,24 @@
 
 import Foundation
 
-final class DessertListViewModel: ObservableObject {
+@MainActor final class DessertListViewModel: ObservableObject {
     
     @Published var desserts = [Dessert]()
     @Published var isLoading = false
     
     func getDesserts() {
-        
         isLoading = true
-        
-        NetworkManager.shared.getDesserts { result in
-            DispatchQueue.main.async {
-                self.isLoading = false
-                switch result {
-                case .success(let desserts):
-                    self.desserts = desserts
-                case .failure(let error):
-                    print(error)
-                }
+
+        Task {
+            do {
+                desserts = try await NetworkManager.shared.getDesserts()
+                isLoading = false
+            } catch {
+                isLoading = false
+                throw DError.requestFailed
             }
         }
+
     }
     
 }
