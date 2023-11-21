@@ -18,7 +18,9 @@ struct DessertList: View {
                     NavigationLink(value: dessert) {
                         DessertListCell(dessert: dessert)
                     }
+                    .listRowBackground(Color.white.opacity(0.5))
                 }
+
                 .navigationTitle("Desserts")
                 .navigationDestination(for: Dessert.self) { dessert in
                     DessertDetails(dessertId: dessert.idMeal)
@@ -29,6 +31,7 @@ struct DessertList: View {
                 )
                 .scrollContentBackground(.hidden)
             }
+            .accentColor(.indigo)
             .task {
                 viewModel.getDesserts()
             }

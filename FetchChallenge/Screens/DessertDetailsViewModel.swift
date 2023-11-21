@@ -20,7 +20,6 @@ import Foundation
         do {
             let details = try await NetworkManager.shared.getDessertDetails(mealId: dessertId)
             dessert = details
-            print("emily", dessert)
         } catch {
             print("Error fetching: \(error)")
         }

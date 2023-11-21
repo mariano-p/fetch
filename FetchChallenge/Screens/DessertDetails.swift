@@ -13,43 +13,35 @@ struct DessertDetails: View {
     @StateObject var viewModel = DessertDetailsViewModel()
         
     var body: some View {
-        ZStack {
-            HStack {
-                AsyncImage(url: URL(string: viewModel.dessert.strMealThumb)) { image in
-                          image
-                              .resizable()
-                              .aspectRatio(contentMode: .fit)
-                              
-                      } placeholder: {
-                          Color.gray
-                      }
-                      .frame(width: 90, height: 90)
-                      .cornerRadius(8)
-                
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(viewModel.dessert.strMeal)
-                        .font(.title2)
-                        .fontWeight(.medium)
-                    if let strArea = viewModel.dessert.strArea {
-                        Text(strArea)
-                            .font(.title2)
-                            .fontWeight(.medium)
-                    }
-                }
+        ScrollView {
+            VStack {
+                DessertDetailsHeader(strMealThumb: viewModel.dessert.strMealThumb, strMeal: viewModel.dessert.strMeal, strArea: viewModel.dessert.strArea)
 
+                if let ingredients = viewModel.dessert.ingredients {
+                    IngredientsSectionView(ingredients: ingredients)
+                }
                 
+                if let instructions = viewModel.dessert.strInstructions {
+                    InstructionsSectionView(instructions: instructions)
+                }
             }
-            if viewModel.isLoading {
-                LoadingView()
-            }
+            
         }
+        .background(
+            LinearGradient(gradient: Gradient(colors: [.white, .indigo.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+        )
+        .overlay(
+            Group {
+                if viewModel.isLoading {
+                    LoadingView()
+                }
+            }
+        )
         .task {
             await viewModel.getDessertDetails(dessertId: dessertId)
         }
-
-
     }
-
 }
 
 struct DessertDetails_Previews: PreviewProvider {

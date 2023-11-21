@@ -90,7 +90,6 @@ struct GetDessertByIdResponse: Decodable {
 struct MockData {
     static let mockIngredients: [Ingredient] = [
         Ingredient(name: "Ingredient1", quantity: "1 cup"),
-        // Add more mock ingredients as needed
     ]
 
     static let mockDessert = Dessert(
